@@ -1,0 +1,46 @@
+package {
+    default_applicable_licenses: ["external_tree_license"],
+}
+
+license {
+    name: "external_tree_license",
+    license_kinds: ["SPDX-license-identifier-GPL-2.0-only"],
+    license_text: ["COPYING"],
+}
+
+cc_binary {
+    name: "tree",
+    srcs: [
+        "tree.c",
+        "unix.c",
+        "file.c",
+        "info.c",
+        "list.c",
+        "hash.c",
+        "html.c",
+        "xml.c",
+        "json.c",
+        "color.c",
+        "filter.c",
+        "util.c",
+        "strverscmp.c",
+    ],
+    cflags: [
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-D_LARGEFILE64_SOURCE",
+        "-D_FILE_OFFSET_BITS=64",
+        "-D_GNU_SOURCE",
+        "-D__ANDROID__",
+        "-Wno-unused-parameter",
+        "-Wno-strict-prototypes",
+        "-Wno-sign-compare",
+        "-Wno-missing-field-initializers",
+        "-Wno-shadow",
+        "-Wno-conversion",
+        "-Wno-discarded-qualifiers",
+    ],
+    stl: "none",
+    vendor_available: true,
+}
