@@ -1,7 +1,7 @@
 /* Compare strings while treating digits characters numerically.
    Copyright (C) 1997, 2002, 2005 Free Software Foundation, Inc.
    This file is part of the libiberty library.
-   Contributed by Jean-François Bignolles <bignolle@ecoledoc.ibp.fr>, 1997.
+   Contributed by Jean-FranÃ§ois Bignolles <bignolle@ecoledoc.ibp.fr>, 1997.
 
    Libiberty is free software; you can redistribute it and/or
    modify it under the terms of the GNU Lesser General Public
@@ -17,6 +17,9 @@
    License along with the GNU C Library; if not, write to the Free
    Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
    02110-1301 USA.  */
+/*
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
 
 /* #include "libiberty.h" */
 /* #include "safe-ctype.h" */
